@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EimasCraft | Handmade Hats & Fascinators</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>EC</span>
+            <div>
+                <h2>EimasCraft</h2>
+                <small>Handmade Hats & Fascinators</small>
+            </div>
+        </div>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#custom">Custom Orders</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">HANDMADE WITH LOVE</p>
+
+            <h1>
+                Elegant Headwear
+                <br>
+                <span>Made to Make You Shine</span>
+            </h1>
+
+            <p>
+                Discover beautifully handcrafted hats and fascinators
+                designed to add elegance, confidence and personality
+                to every special occasion.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#collection" class="btn primary-btn">
+                    Explore Collection
+                </a>
+
+                <a href="#custom" class="btn secondary-btn">
+                    Custom Designs
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="intro">
+
+        <p class="eyebrow">OUR COLLECTION</p>
+
+        <h2>Unique Pieces. Beautifully Crafted.</h2>
+
+        <p>
+            From elegant hats to statement fascinators, every piece is
+            carefully designed and handmade with attention to detail.
+        </p>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="collection" id="collection">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">SHOP OUR COLLECTION</p>
+                <h2>Featured Pieces</h2>
+            </div>
+
+            <button class="filter-btn active" onclick="filterProducts('all')">
+                All
+            </button>
+
+            <button class="filter-btn" onclick="filterProducts('hats')">
+                Hats
+            </button>
+
+            <button class="filter-btn" onclick="filterProducts('fascinators')">
+                Fascinators
+            </button>
+
+        </div>
+
+
+        <div class="products-grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card" data-category="hats">
+
+                <div class="product-image">
+                    <img src="c:\Users\User\Desktop\Mom website\IMG_4520.jpeg" alt="Navy and white handmade hat">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">HAT</span>
+
+                    <h3>Classic Navy Floral Hat</h3>
+
+                    <p>
+                        A beautifully detailed navy and white statement
+                        hat designed for elegant occasions.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>Price on Request</strong>
+
+                        <a href="https://wa.me/2348086829999?text=Hello%2C%20I%20am%20interested%20in%20the%20Classic%20Navy%20Floral%20Hat."
+                           target="_blank"
+                           class="order-btn">
+                            Order
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card" data-category="hats">
+
+                <div class="product-image">
+                    <img src="c:\Users\User\Desktop\Mom website\IMG_4520.jpeg" alt="Black handmade textured hat">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">HAT</span>
+
+                    <h3>Elegant Black Statement Hat</h3>
+
+                    <p>
+                        A sophisticated black textured hat finished
+                        with beautiful decorative detailing.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>Price on Request</strong>
+
+                        <a href="https://wa.me/2348086829999?text=Hello%2C%20I%20am%20interested%20in%20the%20Elegant%20Black%20Statement%20Hat."
+                           target="_blank"
+                           class="order-btn">
+                            Order
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card" data-category="fascinators">
+
+                <div class="product-image">
+                    <img src="c:\Users\User\Desktop\Mom website\IMG_4522.jpeg" alt="Purple and gold fascinator">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">FASCINATOR</span>
+
+                    <h3>Purple & Gold Fascinator</h3>
+
+                    <p>
+                        A stylish and elegant fascinator featuring
+                        beautiful purple and gold detailing.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>Price on Request</strong>
+
+                        <a href="https://wa.me/2348086829999?text=Hello%2C%20I%20am%20interested%20in%20the%20Purple%20and%20Gold%20Fascinator."
+                           target="_blank"
+                           class="order-btn">
+                            Order
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card" data-category="fascinators">
+
+                <div class="product-image">
+                    <img src="c:\Users\User\Desktop\Mom website\IMG_4523.jpeg" alt="Colourful handmade fascinator">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">FASCINATOR</span>
+
+                    <h3>Colour Pop Fascinator</h3>
+
+                    <p>
+                        A bold and colourful handmade piece designed
+                        to make your outfit stand out.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>Price on Request</strong>
+
+                        <a href="https://wa.me/2348086829999?text=Hello%2C%20I%20am%20interested%20in%20the%20Colour%20Pop%20Fascinator."
+                           target="_blank"
+                           class="order-btn">
+                            Order
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="c:\Users\User\Desktop\Mom website\IMG_4521.jpeg" alt="Handmade hat">
+        </div>
+
+        <div class="about-content">
+
+            <p class="eyebrow">THE STORY BEHIND THE CRAFT</p>
+
+            <h2>Made by Hand. Made with Passion.</h2>
+
+            <p>
+                Every hat and fascinator is carefully handmade with
+                creativity, patience and attention to detail.
+            </p>
+
+            <p>
+                Our designs are created for women who want to express
+                their unique style and feel confident at every special
+                occasion.
+            </p>
+
+            <a href="#contact" class="btn primary-btn">
+                Get in Touch
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CUSTOM ORDERS -->
+    <section class="custom" id="custom">
+
+        <div class="custom-content">
+
+            <p class="eyebrow">CREATE SOMETHING UNIQUE</p>
+
+            <h2>Looking for Something Special?</h2>
+
+            <p>
+                We create custom hats and fascinators designed to match
+                your outfit, event and personal style.
+            </p>
+
+            <a href="https://wa.me/2348086829999?text=Hello%2C%20I%20would%20like%20to%20make%20a%20custom%20hat%20or%20fascinator%20order."
+               target="_blank"
+               class="btn light-btn">
+                Request a Custom Design
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <p class="eyebrow">GET IN TOUCH</p>
+
+        <h2>Let's Create Something Beautiful</h2>
+
+        <p>
+            Interested in a piece or want to discuss a custom design?
+            Contact us today.
+        </p>
+
+        <div class="contact-buttons">
+
+            <a href="https://wa.me/2348086829999" target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="tel:+2348086829999">
+                Call Us
+            </a>
+
+            <a href="mailto:your-email@example.com">
+                Email Us
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            Eimas Craft
+        </div>
+
+        <p>
+            Handmade hats and fascinators created with elegance.
+        </p>
+
+        <p class="copyright">
+            © 2026 Eimas Craft. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
