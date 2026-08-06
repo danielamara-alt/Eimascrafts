@@ -26,7 +26,22 @@ img {
     display: block;
 }
 
+.about-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.about-content p,
+.about-content h2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content .btn{
+    display: inline-block;
+    margin-top: 20px;
+}
 /* NAVIGATION */
 
 .navbar {
